@@ -1,0 +1,21 @@
+daftar_nilai =[]
+
+ulangi = True
+
+while ulangi:
+    nama = input("Masukkan nama: ")
+    nilai = input("masukkan nilai: ")
+
+    daftar_nilai.append([nama, int(nilai)])
+    if (input("Tambah data lagi (y/t)?" == 't'):
+        ulangi = False
+
+print("\nDaftar Nilai Mahasiswa:")
+print("=============================")
+print("| No |    Nama      | Nilai |")
+print("=============================")
+i=0
+for item in daftar_nilai:
+    i+=1
+    print("| {no:2d}  | {nama:12s} | {nilai:5.2f} |"
+          .format(nama=item[0], nilai=item[1], no=i))
